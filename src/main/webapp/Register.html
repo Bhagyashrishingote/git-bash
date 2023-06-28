@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CRUD Operations</title>
+</head>
+<body>
+<h1>CRUD Operations</h1>
+
+<!-- Add Record Form -->
+<h2>Add Record</h2>
+<form action="AddServlet" method="post">
+    Enter your name: <input type="text" name="nm" /> <br />
+    Enter email id: <input type="email" name="em" /> <br />
+    Enter password: <input type="password" name="pw" /> <br />
+    <button type="submit">Add</button> <hr/>
+</form>
+<!-- Read Record Form -->
+<h2>Read Record</h2>
+<form action="ReadServlet" method="get">
+    Enter name to read: <input type="text" name="nm" /> <br />
+    <button type="submit">Read</button> <hr/>
+</form> 
+
+<!-- Update Record Form -->
+<h2>Update Record</h2>
+<form action="UpdateServlet" method="post">
+    Enter name to update: <input type="text" name="nm" /> <br />
+    Enter new email: <input type="email" name="em" /> <br />
+    Enter new password: <input type="password" name="pw" /> <br />
+    <button type="submit">Update</button> <hr/>
+</form> 
+
+<!-- Delete Record Form -->
+<h2>Delete Record</h2>
+<form action="DeleteServlet" method="post">
+    Enter name to delete: <input type="text" name="nm" /> <br />
+    <button type="submit">Delete</button> 
+</form> 
+
+</body>
+</html>
